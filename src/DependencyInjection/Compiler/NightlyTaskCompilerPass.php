@@ -1,6 +1,6 @@
 <?php
 
-namespace Dekalee\NigthlyTaskBundle\DependencyInjection\Compiler;
+namespace Dekalee\NightlyTaskBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -18,7 +18,7 @@ class NightlyTaskCompilerPass implements CompilerPassInterface
      */
     public function process(ContainerBuilder $container)
     {
-        $manager = $container->getDefinition('dekalee_nigthly_task.bag.task');
+        $manager = $container->getDefinition('dekalee_nightly_task.bag.task');
         $strategies = $container->findTaggedServiceIds('dekalee_nightly.task.strategy');
         foreach ($strategies as $id => $strategy) {
             $strategy[0] = array_merge([

@@ -1,6 +1,6 @@
 parameters:
-    dekalee_nigthly_task.bag.task.class: Dekalee\NigthlyTaskBundle\Bag\TasksBag
+    dekalee_nightly_task.bag.task.class: Dekalee\NightlyTaskBundle\Bag\TasksBag
 
 services:
-    dekalee_nigthly_task.bag.task:
-        class: '%dekalee_nigthly_task.bag.task.class%'
+    dekalee_nightly_task.bag.task:
+        class: '%dekalee_nightly_task.bag.task.class%'

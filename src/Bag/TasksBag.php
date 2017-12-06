@@ -1,6 +1,6 @@
 <?php
 
-namespace Dekalee\NigthlyTaskBundle\Bag;
+namespace Dekalee\NightlyTaskBundle\Bag;
 
 use Symfony\Component\Console\Command\Command;
 

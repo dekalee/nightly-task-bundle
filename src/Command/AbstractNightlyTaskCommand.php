@@ -1,8 +1,8 @@
 <?php
 
-namespace Dekalee\NigthlyTaskBundle\Command;
+namespace Dekalee\NightlyTaskBundle\Command;
 
-use Dekalee\NigthlyTaskBundle\Bag\TasksBag;
+use Dekalee\NightlyTaskBundle\Bag\TasksBag;
 use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Descriptor\ApplicationDescription;
@@ -53,7 +53,7 @@ abstract class AbstractNightlyTaskCommand extends ContainerAwareCommand
         $this->input = $input;
         $this->output = $output;
         $this->logger = $this->getContainer()->get('logger');
-        $this->taskBag = $this->getContainer()->get('dekalee_nigthly_task.bag.task');
+        $this->taskBag = $this->getContainer()->get('dekalee_nightly_task.bag.task');
     }
 
     /**

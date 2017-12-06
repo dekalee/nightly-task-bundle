@@ -1,15 +1,15 @@
 <?php
 
-namespace Dekalee\NigthlyTaskBundle;
+namespace Dekalee\NightlyTaskBundle;
 
-use Dekalee\NigthlyTaskBundle\DependencyInjection\Compiler\NightlyTaskCompilerPass;
+use Dekalee\NightlyTaskBundle\DependencyInjection\Compiler\NightlyTaskCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class DekaleeNigthlyTaskBundle
+ * Class DekaleeNightlyTaskBundle
  */
-class DekaleeNigthlyTaskBundle extends Bundle
+class DekaleeNightlyTaskBundle extends Bundle
 {
     /**
      * Builds the bundle.

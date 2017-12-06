@@ -1,6 +1,6 @@
 <?php
 
-namespace Dekalee\NigthlyTaskBundle\Command;
+namespace Dekalee\NightlyTaskBundle\Command;
 
 /**
  * Interface NightlyCommandInterface
