@@ -1,0 +1,15 @@
+services:
+    dekalee_nightyl_task.commande.list_task:
+        class: Dekalee\NightlyTaskBundle\Command\ListNightlyTaskCommand
+        arguments:
+            - '@dekalee_nightly_task.bag.task'
+            - '@Psr\Log\LoggerInterface'
+        tags:
+            - { name: console.command }
+    dekalee_nightyl_task.commande.nightly_task:
+        class: Dekalee\NightlyTaskBundle\Command\NightlyTaskCommand
+        arguments:
+            - '@dekalee_nightly_task.bag.task'
+            - '@Psr\Log\LoggerInterface'
+        tags:
+            - { name: console.command }
